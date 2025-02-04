@@ -64,6 +64,37 @@ Report security issues to our `Security Panel <mailto:security@codeigniter.com>`
 or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
 
 ***************
+
+****************
+Project Information
+*****************
+
+3. Explanation
+View:
+
+The form is submitted via AJAX using jQuery.
+
+The #flash-message div is used to display success or error messages returned from the server.
+
+Controller:
+
+The register_ajax method handles the AJAX request.
+
+It validates the form data using CodeIgniter’s form validation library.
+
+If validation fails, it returns a JSON response with error messages.
+
+If validation passes, it returns a success message.
+
+AJAX:
+
+The form data is serialized and sent to the server using $.ajax.
+
+The server responds with a JSON object containing a status and message.
+
+Flash Messages:
+
+Success or error messages are displayed dynamically in the #flash-message div.
 Acknowledgement
 ***************
 
